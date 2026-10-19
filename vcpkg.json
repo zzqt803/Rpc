@@ -1,0 +1,19 @@
+{
+    "name": "sample-rpc",
+    "version": "1.0.0",
+    "dependencies": [
+        "protobuf",
+        {
+            "name": "zookeeper",
+            "features": [
+                "sync"
+            ]
+        },
+        "trantor",
+        "fmt",
+        "spdlog",
+        "gtest",
+        "toml11",
+        "cli11"
+    ]
+}

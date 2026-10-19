@@ -5,7 +5,6 @@
 #include <string>
 #include <vector>
 #include <zookeeper/zookeeper.h>
-
 class ZkClient {
 public:
   ZkClient();

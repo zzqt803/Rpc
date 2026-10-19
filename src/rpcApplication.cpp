@@ -15,7 +15,7 @@ void RpcApplication::Init(int argc, char **argv) {
 
   // 加载配置文件
   auto &inst = GetInstance();
-  inst.config_.LoadConfigFile(config_path_.c_str());
+  inst.GetConfig().LoadConfigFile(config_path_.c_str());
 
   // 读取配置，初始化日志
   auto &config = inst.GetConfig();

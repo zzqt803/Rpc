@@ -1,0 +1,38 @@
+build/
+cmake-build-*/
+out/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+compile_commands.json
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+
+# ========== vcpkg 相关（重点！manifest模式） ==========
+# vcpkg 自动生成的安装目录，千万不要提交
+vcpkg_installed/
+vcpkg_build/
+vcpkg/packages/
+vcpkg/downloads/
+vcpkg/buildtrees/
+vcpkg/tmp/
+vcpkg/versions/
+vcpkg/vcpkg-logs/
+# vcpkg 的子本体（如果你把vcpkg作为submodule放进项目就加下面一行，否则注释掉）
+# vcpkg/
+
+# vcpkg 临时日志
+vcpkg-*.log
+
+*.log
+*.out
+core
+core.*
+tmp/

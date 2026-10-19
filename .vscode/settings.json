@@ -1,0 +1,18 @@
+{
+    //clagnd相关配置
+    "clangd.arguments": [
+        "--background-index", // 后台索引
+        "--completion-style=detailed", // 详细补全
+        "--clang-tidy", // 代码检查
+        "--header-insertion=iwyu", // 自动加头文件
+        "--compile-commands-dir=./build", 
+        "--query-driver=/usr/bin/g++*,/usr/bin/clang++*", // 让 clangd 识别系统头文件
+    ],
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    },
+    "[c]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "cmake.sourceDirectory": "/home/zqt/PersonalProgram/Rpc",
+}

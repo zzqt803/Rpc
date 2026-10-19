@@ -3,7 +3,6 @@
 #include "rpcLogger.h"
 #include <chrono>
 #include <mutex>
-#include <zookeeper/zookeeper.h>
 #include <zookeeper/zookeeper.jute.h>
 
 ZkClient::ZkClient() = default;
